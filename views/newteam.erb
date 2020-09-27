@@ -5,6 +5,34 @@
   <title>Basketball Team Signup</title>
  </head>
  <body>
+  <h1>Create a Basketball Team!</h1>
+<!-- the form sends a request to the team.erb through a post method -->
+  <form method="POST" action="/team">
+    
+    <label for="team-name">Team Name: </label>
+    <p><input type="text" name="name" id="name"></p>
+    
+    <label for="coach">Coach: </label>
+    <p><input type="text" name="coach" id="coach"></p>
+    
+    <label for="point-guard">Point Guard: </label>
+    <p><input type="text" name="pg" id="pg"></p>
+    
+    <label for="shooting-guard">Shooting Guard: </label>
+    <p><input type="text" name="sg" id="sg"></p>
+    
+    <label for="small-forward">Small Forward: </label>
+    <p><input type="text" name="sf" id="sf"></p>
+    
+    <label for="power-forward">Power Forward: </label>
+    <p><input type="text" name="pf" id="pf"></p>
+
+    <label for="center">Center: </label>
+    <p><input type="text" name="c" id="c"></p>
+    <br>
+    <input type="submit" name="submit" value="Submit" id="Submit" />
+
+  </form>
  </body>
 </html>
 
