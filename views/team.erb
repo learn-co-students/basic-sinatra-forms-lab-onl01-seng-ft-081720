@@ -5,9 +5,13 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+ <%@result.each do |k,v|%>
+ <%if k == "name"%>
+ <h1> <b> <%= "#{k}: #{v}" %> </b> </h1>
+ <%else%>
+  <p> <b> <%= "#{k}: #{v}" %> </b> </p>
+  <%end%>
+ <%end%>
  </body>
 </html>
 
